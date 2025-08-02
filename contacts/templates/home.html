@@ -1,0 +1,15 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="{% static 'home.css' %}" />
+  </head>
+  <body>
+    <h1><b>WELCOME TO CONTACT MANAGER</b></h1>
+    <p>Manage your contacts easily and efficiently!</p>
+    <div class="link-container">
+      <a href="{% url 'formcont' %}" class="link add">Add new contact</a>
+      <a href="{% url 'contacts'  %}" class="link view"> View All Contacts</a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+body{
+  margin: 200px;
+  align-content: center;
+  font: 500px ;
+  letter-spacing: 0.64px;
+  color: #06070a;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(215, 215, 225);
+ 
+}
+.link-container{
+    display: flex;
+    gap: 15px;  /* space between the links */
+  
+}
+.link{
+    margin: 5px;
+    border: 2px ;
+    border-radius: 5px;
+    color: rgb(241, 240, 240);
+}
+
+a:link, a:visited{
+  background-color:rgb(30, 30, 61);
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+a:hover{
+    font-size: 150%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* mobile styles */
+body {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+a {
+  display: block;
+  margin: 10px 0;
+}
+
+@media (min-width: 768px) {
+  /* Tablet/Desktop tweaks */
+  body {
+    padding: 40px;
+    font-size: 1.2rem;
+  }
+
+  a {
+    display: inline-block;
+    margin: 0 10px;
+  }
+}

@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{% block title %}{% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'contact.css' %}"> 
+ </head>
+  <body>
+    <div class="container">
+    <form method="POST" class="post-form">
+      {% csrf_token %} {{ form.as_p }}
+      {% if success %}
+    <p style="color: green">Contact added successfully!</p>
+    {% endif %}
+      <button type="submit" value="SUBMIT">
+        SAVE</a>
+      </button>
+    </form>
+  </div>
+  </body>
+</html>

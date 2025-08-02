@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="{% static 'viewcontact.css' %}" />
+  </head>
+  <body>
+    <div class="link-container">
+      {% block content %}
+
+      <h1>Contacts</h1>
+
+      {% for x in ycontact %}
+      <div class="link-card">
+        Name: <b>{{x.firstname}} {{x.lastname}}</b><br />
+        Phone Number: {{x.phone}}<br />
+        Email: {{x.email}}
+
+        <div class="actions">
+          <a
+            href="{% url 'delete' x.id  %}"
+            class="link delete"
+            style="color: red"
+            >Delete</a
+          >
+          <a
+            href="{% url 'edit' x.id %}"
+            class="link edit"
+            style="color: rgb(214, 125, 9)"
+          >
+            Edit</a
+          >
+        </div>
+      </div>
+      {% empty %}
+      <li>No contacts yet.</li>
+      {% endfor %} {% endblock %}
+      <div class="exit">
+        <a href="{% url 'home'  %}" class="home">EXIT</a>
+      </div>
+    </div>
+  </body>
+</html>

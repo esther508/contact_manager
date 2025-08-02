@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+
+
+.container {
+    
+    border-radius: 6px;
+    max-width: 500px;
+    width:90% ;
+   /* margin-top: 150px;
+    margin-bottom: 150px;
+    margin-left: 200px; FLEX HANDLES IT*/
+    padding: 50px;
+    font-size: x-large;
+    background-color: #081024;
+    color: #c6c6fc;
+    box-shadow: 0 5px 7px -1px rgba(94, 89, 89, 0.23); 
+}
+
+body{
+    display: flex; /* activate flex box */
+    align-items: center; /* center vertically */
+    justify-content: center;  /* center horizontally  */
+    height: 90vh;  /* take full viewport height */
+    background-color:rgba(102, 102, 134, 0.644);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+/*.btn also means button*/
+button{
+    margin: 5px;
+    border: 2px ;
+    border-radius: 5px;
+    font-size: large;
+    background-color:rgba(102, 102, 134, 0.644);
+    color:white ;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+button:hover{
+  background-color:#c6c6fc ;
+  color: rgba(102, 102, 134, 0.644);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+  width: 100%;         /* makes input fill the container width */
+  padding: 12px ;  /* bigger inside spacing */
+  margin: 8px 0;       /* space between inputs */
+  box-sizing: border-box;
+  font-size: large;    /* larger text inside */
+  border: 2px solid #ccc; /* optional: thicker border */
+  border-radius: 4px;      /* rounded corners */
+  
+  color: #000;  
+}
+
+.side{
+    
+    margin: 5px;
+    border: 2px ;
+    border-radius: 5px;
+    font-size: large;
+    background-color:#c6c6fc;
+    text-align: center;
+    text-decoration: none;
+}
+
+.side:hover{
+   
+  background-color:#c6c6fc ;
+  color: rgba(102, 102, 134, 0.644);
+}
+
+
+
