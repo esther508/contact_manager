@@ -11,7 +11,7 @@ This project allows users to create, read, update, and delete (CRUD) contacts.
 3. Install dependencies
 4. Apply migrations
 5. Run the development server
-6. Open in your browser: http://127.0.0.1:8000/
+6. Open in your browser: http://127.0.0.1:8000/home/
 ## Future Improvements
 - Add user authentication (login/logout)
 - Add search and filter for contacts
